@@ -6,25 +6,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>My Personal Links</title>
   <style>
-html, body {
+   body {
+margin: 0;
+padding: 0;
+height: 100vh;
 display: flex;
-flex-direction: column;
-align-items: center;
 justify-content: center;
-font-family: Arial, sans-serif;
-
-background-image: url("background1.jpg"); /* Keep your existing image */
-background-size: 110% auto; /* Slight zoom-out */
-background-position: center; /* Centered vertically and horizontally */
-background-repeat: no-repeat;
-}
-
-
-.container {
-display: flex;
-flex-direction: column;
 align-items: center;
+background-image: url('background1.jpg'); /* or whatever your background image is */
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+font-family: Arial, sans-serif;
 }
+
+
+    ..container {
+background: none;
+padding: 0;
+border-radius: 0;
+box-shadow: none;
+}
+    }
 
     .container h1 {
       margin-bottom: 25px;
@@ -34,29 +37,27 @@ align-items: center;
 
     .container a {
 display: block;
-margin: 8px 0;
-padding: 12px 24px;
-background-color: red;
+margin: 10px 0;
+text-decoration: none;
 color: white;
 font-weight: bold;
+background-color: red;
+padding: 10px 20px;
 border-radius: 5px;
-text-decoration: none;
+opacity: 0.9;
+text-align: center;
 transition: 0.3s;
 }
 
 a:hover {
-transform: scale(1.03);
-box-shadow: 0 0 8px rgba(255, 0, 0, 0.7);
+opacity: 1;
 }
-</style>
-html, body {
-margin: 0;
-padding: 0;
-width: 100vw;
-height: 100vh;
-overflow: hidden; /* Disable scrolling */
-position: relative;
-}
+
+    .container a:hover {
+      background-color: #444;
+      transform: scale(1.03);
+    }
+  </style>
 </head>
 <body>
   <div class="container">
