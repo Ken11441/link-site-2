@@ -7,15 +7,15 @@
   <title>My Personal Links</title>
   <style>
 html, body {
-margin: 0;
-padding: 0;
-overflow: hidden;
-height: 100vh;
-width: 100vw;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
 font-family: Arial, sans-serif;
-background-image: url("background.jpg"); /* or whatever your image is */
-background-size: 115%; /* 👈 Slight zoom out — try 115%, adjust as needed */
-background-position: center;
+
+background-image: url("background1.jpg"); /* Keep your existing image */
+background-size: 110% auto; /* Slight zoom-out */
+background-position: center; /* Centered vertically and horizontally */
 background-repeat: no-repeat;
 }
 
@@ -51,13 +51,15 @@ transition: 0.3s;
 a:hover {
 opacity: 1;
 }
-</style>
-
-    .container a:hover {
-      background-color: #444;
-      transform: scale(1.03);
-    }
-  </style>
+<style>
+html, body {
+margin: 0;
+padding: 0;
+width: 100vw;
+height: 100vh;
+overflow: hidden; /* Disable scrolling */
+position: relative;
+}
 </head>
 <body>
   <div class="container">
