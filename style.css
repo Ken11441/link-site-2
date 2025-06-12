@@ -61,6 +61,7 @@ body {
   transition: 0.3s;
   width: 60%;
   max-width: 220px;
+text-shadow: 0 0 1px black, 0 0 1px black;
 }
 
 .container a:hover {
