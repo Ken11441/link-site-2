@@ -10,24 +10,25 @@ html, body {
 margin: 0;
 padding: 0;
 height: 100vh;
-overflow: hidden; /* Disable scrolling */
+overflow: hidden;
 }
 
 body {
 display: flex;
 flex-direction: column;
 align-items: center;
-justify-content: center;
+justify-content: flex-start;
 background-image: url("background1.jpg");
 background-size: cover;
-background-position: center top 20%;
+background-position: center top;
 background-repeat: no-repeat;
+padding-top: 80px;
 }
 
 .logo {
-width: 200px;
+width: 150px;
 margin-top: 40px;
-margin-bottom: 30px;
+margin-bottom: 20px;
 filter: drop-shadow(0 0 10px red);
 }
 
@@ -56,6 +57,19 @@ background-color: darkred;
 opacity: 1;
 transform: scale(1.03);
 }
+
+@media screen and (min-width: 768px) {
+  .logo {
+    width: 200px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  body {
+    padding-top: 120px;
+    background-position: center top 20%;
+  }
+}
 </style>
 </head>
 <body>
@@ -65,9 +79,5 @@ transform: scale(1.03);
 <a href="https://fansly.com/ighubby">Fansly</a>
 <a href="https://rybabycreations.com/">Rybaby's Links</a>
 </div>
-</body>
-</html>
-
-}
 </body>
 </html>
