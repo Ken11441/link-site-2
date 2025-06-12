@@ -1,43 +1,51 @@
-/* Mobile-first styles */
+:root {
+  --vh: 100vh;
+}
 
+/* Base styles */
 html, body {
   margin: 0;
   padding: 0;
-  height: 100vh;
+  height: 100%;
+  width: 100%;
   overflow: hidden;
 }
 
 body {
+  height: calc(var(--vh, 1vh) * 100);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   background-image: url("background1.jpg");
   background-size: cover;
-  background-position: center top;
+  background-position: top center;
   background-repeat: no-repeat;
-  padding-top: 80px;
+  position: relative;
 }
 
 .logo-container {
+  width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
   margin-top: 10px;
 }
 
 .logo {
-  max-width: 300px;
+  max-width: 300px; /* Adjust this to resize logo */
   height: auto;
   filter: drop-shadow(0 0 8px red);
   margin-bottom: 10px;
 }
 
 .container {
+  position: absolute;
+  bottom: 200px; /* Adjust this to move links up/down */
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 15px;
+  width: 100%;
 }
 
 .container a {
@@ -51,6 +59,8 @@ body {
   opacity: 0.9;
   text-align: center;
   transition: 0.3s;
+  width: 80%;
+  max-width: 300px;
 }
 
 .container a:hover {
@@ -61,17 +71,16 @@ body {
 
 /* Desktop styles */
 @media screen and (min-width: 768px) {
-  body {
-    padding-top: 120px;
-    background-position: center top 20%;
+  .logo {
+    max-width: 200px;
+    margin-bottom: 30px;
   }
 
   .logo-container {
     margin-top: 20px;
   }
 
-  .logo {
-    max-width: 200px;
-    margin-bottom: 30px;
+  .container {
+    bottom: 80px;
   }
 }
