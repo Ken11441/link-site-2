@@ -5,15 +5,88 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>My Personal Links</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      width: 100vw;
+      overflow: hidden;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      background-image: url("background1.jpg");
+      background-size: cover;
+      background-position: top center;
+      background-repeat: no-repeat;
+      position: relative;
+    }
+
+    .logo-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    .logo {
+      max-width: 150px;
+      height: auto;
+      filter: drop-shadow(0 0 8px red);
+    }
+
+    .container {
+      position: absolute;
+      bottom: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      width: 100%;
+    }
+
+    .container a {
+      display: block;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      background-color: red;
+      padding: 10px 20px;
+      border-radius: 5px;
+      opacity: 0.9;
+      text-align: center;
+      transition: 0.3s;
+      width: 80%;
+      max-width: 300px;
+    }
+
+    .container a:hover {
+      background-color: darkred;
+      opacity: 1;
+      transform: scale(1.03);
+    }
+
+    @media screen and (min-width: 768px) {
+      .logo {
+        max-width: 200px;
+      }
+
+      .container {
+        bottom: 80px;
+      }
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Logo Section -->
   <div class="logo-container">
     <img src="logo.PNG" alt="IGHubby Logo" class="logo" />
   </div>
 
-  <!-- Link Buttons -->
   <div class="container">
     <a href="https://onlyfans.com/kenandrybaby">Free OnlyFans</a>
     <a href="https://fansly.com/ighubby">Fansly</a>
