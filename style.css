@@ -1,12 +1,27 @@
+/* Mobile-first styles */
+
 .logo-container {
-display: flex;
-justify-content: center;
-align-items: center;
-margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
 }
 
 .logo {
-max-width: 200px;
-height: auto;
-filter: drop-shadow(0 0 8px red);
+  max-width: 150px;
+  height: auto;
+  filter: drop-shadow(0 0 8px red);
+  margin-bottom: 20px;
+}
+
+/* Desktop styles */
+@media screen and (min-width: 768px) {
+  .logo-container {
+    margin-top: 20px;
+  }
+
+  .logo {
+    max-width: 200px;
+    margin-bottom: 30px;
+  }
 }
